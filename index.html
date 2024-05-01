@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Meus Contatos</h1>
+        <section>
+            <form id="form-agenda">
+                <label for="nome-contato">Nome:
+                    <input type="text" id="nome-contato" placeholder="Insira o nome do contato">
+                </label>
+    
+                <label for="telefone-contato">Telefone:
+                    <input type="tel" id="telefone-contato" onkeyup="toLimit(this)" placeholder="00 0000-0000">
+                </label>
+
+                <button type="submit">Adicionar contato</button>
+    
+            </form>
+        </section>
+        <section>
+    
+            <table>
+    
+                <tbody>
+                </tbody>
+            </table>
+    
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
